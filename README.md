@@ -8,10 +8,10 @@ Tugas Pemrosesan Paralel MPI Numerik
 
 $ sudo apt update && sudo apt upgrade
 - Pada Master
-![Screenshot_1](https://github.com/anamilia/mpi/assets/151103543/85ee1553-c463-4b96-b6c2-60cf9f38a25f)
+(https://github.com/anamilia/mpi/assets/151103543/85ee1553-c463-4b96-b6c2-60cf9f38a25f)
 
 - Pada Worker1
-![Screenshot_2](https://github.com/anamilia/mpi/assets/151103543/a3d21c2e-5190-4a83-8d1d-557eb853622b)
+(https://github.com/anamilia/mpi/assets/151103543/a3d21c2e-5190-4a83-8d1d-557eb853622b)
 
 - Pada Worker2
 ![Screenshot_3](https://github.com/anamilia/mpi/assets/151103543/8573f288-2dc8-4035-a6dd-860a2859e0a0)
