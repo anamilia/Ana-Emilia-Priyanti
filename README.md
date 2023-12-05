@@ -9,11 +9,11 @@ Tugas Pemrosesan Paralel MPI Numerik
 $ sudo apt update && sudo apt upgrade
 - Pada Master
   
-(https://github.com/anamilia/mpi/assets/151103543/85ee1553-c463-4b96-b6c2-60cf9f38a25f)
+![Screenshot_1](https://github.com/anamilia/mpi/assets/151103543/85ee1553-c463-4b96-b6c2-60cf9f38a25f)
 
 - Pada Worker1
   
-(https://github.com/anamilia/mpi/assets/151103543/a3d21c2e-5190-4a83-8d1d-557eb853622b)
+![Screenshot_2](https://github.com/anamilia/mpi/assets/151103543/a3d21c2e-5190-4a83-8d1d-557eb853622b)
 
 - Pada Worker2
   
@@ -27,15 +27,19 @@ $ sudo apt update && sudo apt upgrade
 
 $ sudo apt install net-tools vim
 - Pada Master
+  
   ![Screenshot_5](https://github.com/anamilia/mpi/assets/151103543/1df1612c-9373-43a4-999a-7be3426c8f6a)
 
 - Pada Worker1
+
   ![Screenshot_6](https://github.com/anamilia/mpi/assets/151103543/3647150c-539b-46e4-a944-7b2402ab120a)
 
 - Pada Worker2
+
   ![Screenshot_7](https://github.com/anamilia/mpi/assets/151103543/41a768e3-788b-4299-8313-0de96949b8fc)
 
 - Pada Worker3
+
   ![Screenshot_8](https://github.com/anamilia/mpi/assets/151103543/22d939d1-5c88-4fd6-b1b0-ef9a90046239)
 
 ## 4.	Melakukan pengecekan IP dengan perintah berikut:
@@ -48,15 +52,19 @@ $ Ifconfig
 # Membuat MPI Cluster
 ## 1.	Konfigurasi hosts file /etc/hosts
 - Pada Master
+
   ![Screenshot_9](https://github.com/anamilia/mpi/assets/151103543/042e1a17-bc23-4292-acca-2ecb45f74efa)
 
 - Pada Worker1
+
   ![Screenshot_10](https://github.com/anamilia/mpi/assets/151103543/e41c19ab-24b7-4210-af6d-192421a96b08)
 
 - Pada Worker2
+
   ![Screenshot_11](https://github.com/anamilia/mpi/assets/151103543/8eac36d8-6ca2-4edb-ac24-5ccf84438c8b)
 
 - Pada Worker3 
+
   ![Screenshot_12](https://github.com/anamilia/mpi/assets/151103543/47df0685-fd74-400d-93ad-166ebb232022)
   
 ## 2. Membuat User Baru
@@ -100,31 +108,39 @@ Setelah membuat dan masuk ke user, lakukan konfigurasi SSH.
 $ sudo apt install openssh-server
 
 -	Pada master
-  ![Screenshot_20](https://github.com/anamilia/mpi/assets/151103543/8e155e88-d764-436c-a023-14e0b24c5c12)
+
+ 	![Screenshot_20](https://github.com/anamilia/mpi/assets/151103543/8e155e88-d764-436c-a023-14e0b24c5c12)
 
 -	Pada worker
-  ![Screenshot_21](https://github.com/anamilia/mpi/assets/151103543/6375cec5-1ea7-48fc-9231-fb6facd3d784)
+
+ 	![Screenshot_21](https://github.com/anamilia/mpi/assets/151103543/6375cec5-1ea7-48fc-9231-fb6facd3d784)
 
 -	Pada worker2
-  ![Screenshot_22](https://github.com/anamilia/mpi/assets/151103543/3a37e546-b4b7-4c06-b5da-9a03a63e7f42)
+
+ 	![Screenshot_22](https://github.com/anamilia/mpi/assets/151103543/3a37e546-b4b7-4c06-b5da-9a03a63e7f42)
 
 -	Pada worker3
-  ![Screenshot_23](https://github.com/anamilia/mpi/assets/151103543/9cc0dad4-3916-413e-b3cd-3cbdefca0ee9)
+
+ 	![Screenshot_23](https://github.com/anamilia/mpi/assets/151103543/9cc0dad4-3916-413e-b3cd-3cbdefca0ee9)
 
 2. Melakukan pengecekan SSH
    
 $ ssh <nama user>@<host>
 
 -	SSH dari Master ke Worker1
-  ![Screenshot_24](https://github.com/anamilia/mpi/assets/151103543/90a0dde5-975b-4ffb-a661-a8f776b3adfa)
+
+ 	![Screenshot_24](https://github.com/anamilia/mpi/assets/151103543/90a0dde5-975b-4ffb-a661-a8f776b3adfa)
 
 -	SSH dari Worker1 ke Master
-  ![Screenshot_25](https://github.com/anamilia/mpi/assets/151103543/bccd2b58-4cea-4823-b477-ad3d76305c6e)
+
+ 	![Screenshot_25](https://github.com/anamilia/mpi/assets/151103543/bccd2b58-4cea-4823-b477-ad3d76305c6e)
 
 - SSH dari Worker2 ke Master
+
   ![Screenshot_26](https://github.com/anamilia/mpi/assets/151103543/2ef1442b-dae5-4227-b9df-a8ac753dac8c)
 
 - SSH dari Worker3 ke Master
+
   ![Screenshot_27](https://github.com/anamilia/mpi/assets/151103543/cddba141-df6a-415b-b6ce-b9027b89e58f)
 
 3. Generate Keygen
@@ -173,13 +189,16 @@ $ sudo systemctl restart nfs-kernel-server
 $ sudo apt install nfs-common
 
 -	Worker1
-  ![Screenshot_34](https://github.com/anamilia/mpi/assets/151103543/317903af-b161-4d56-ba4d-1f41c0760e9e)
+
+ 	![Screenshot_34](https://github.com/anamilia/mpi/assets/151103543/317903af-b161-4d56-ba4d-1f41c0760e9e)
 
 -	Worker2
-  ![Screenshot_35](https://github.com/anamilia/mpi/assets/151103543/bff03e72-86b0-4a9d-8247-99395533879c)
+
+ 	![Screenshot_35](https://github.com/anamilia/mpi/assets/151103543/bff03e72-86b0-4a9d-8247-99395533879c)
 
 -	Worker3
-  ![Screenshot_36](https://github.com/anamilia/mpi/assets/151103543/269ebfb5-f991-47fb-a261-ab682f3ba311)
+
+ 	![Screenshot_36](https://github.com/anamilia/mpi/assets/151103543/269ebfb5-f991-47fb-a261-ab682f3ba311)
 
 5. Mounting
 
@@ -193,16 +212,20 @@ $ sudo mount <server host>:<lokasi shared folder di server> <lokasi shared folde
 $ sudo apt install openmpi-bin libopenmpi-dev
 
 -	Pada Master
-  ![Screenshot_38](https://github.com/anamilia/mpi/assets/151103543/9597f488-05c7-411a-856c-ef8432da0a05)
+
+ 	![Screenshot_38](https://github.com/anamilia/mpi/assets/151103543/9597f488-05c7-411a-856c-ef8432da0a05)
 
 -	Pada Worker1
-  ![Screenshot_39](https://github.com/anamilia/mpi/assets/151103543/6e6b9250-daa6-435f-add6-2f45f941c862)
+
+ 	![Screenshot_39](https://github.com/anamilia/mpi/assets/151103543/6e6b9250-daa6-435f-add6-2f45f941c862)
 
 -	Pada Worker2
-  ![Screenshot_40](https://github.com/anamilia/mpi/assets/151103543/494a2e2b-8f5b-4176-ac38-0f62aa7736fa)
+
+ 	![Screenshot_40](https://github.com/anamilia/mpi/assets/151103543/494a2e2b-8f5b-4176-ac38-0f62aa7736fa)
 
 -	Pada Worker3
-  ![Screenshot_41](https://github.com/anamilia/mpi/assets/151103543/8dfdbeb9-ddb9-40a6-8b18-7bd5e86458ed)
+
+ 	![Screenshot_41](https://github.com/anamilia/mpi/assets/151103543/8dfdbeb9-ddb9-40a6-8b18-7bd5e86458ed)
 
 # Menjalankan Program Bubblesort.py
 ## 1.	Membuat Program
@@ -210,6 +233,7 @@ $ sudo apt install openmpi-bin libopenmpi-dev
 $ touch bubblesort.py
 
 $ sudo nano bubblesort.py
+  
   ![Screenshot_43](https://github.com/anamilia/mpi/assets/151103543/3db99160-52c1-418e-bd94-ffc98cac6071)
 
 ## 2.	Instalasi Python
