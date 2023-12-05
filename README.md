@@ -7,38 +7,54 @@ Tugas Pemrosesan Paralel MPI Numerik
 ## 2.	Melakukan upgrade OS 
 
 $ sudo apt update && sudo apt upgrade
-![Screenshot_1](https://github.com/anamilia/mpi/assets/151103543/85ee1553-c463-4b96-b6c2-60cf9f38a25f)
+- Pada Master
+  ![Screenshot_1](https://github.com/anamilia/mpi/assets/151103543/85ee1553-c463-4b96-b6c2-60cf9f38a25f)
 
-![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/1ef7cba4-fc36-40b1-ba90-5ad5008b0c63)
+- Pada Worker1
+  ![Screenshot_2](https://github.com/anamilia/mpi/assets/151103543/a3d21c2e-5190-4a83-8d1d-557eb853622b)
+
+- Pada Worker2
+  ![Screenshot_3](https://github.com/anamilia/mpi/assets/151103543/8573f288-2dc8-4035-a6dd-860a2859e0a0)
+
+- Pada Worker3
+  ![Screenshot_4](https://github.com/anamilia/mpi/assets/151103543/bfbd1e80-0829-4dcd-b4e4-02f135059731)
 
 ## 3.	Melakukan penginstalan berikut: net-tools untuk ngecek IP, vim untuk teks editor.
 
 $ sudo apt install net-tools vim
-![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/c9c78c35-c6ed-4268-8a7a-dd7c05254cde)
+- Pada Master
+  ![Screenshot_5](https://github.com/anamilia/mpi/assets/151103543/1df1612c-9373-43a4-999a-7be3426c8f6a)
 
-![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/defeae98-ebfb-41fa-93ca-32750ace1317)
+- Pada Worker1
+  ![Screenshot_6](https://github.com/anamilia/mpi/assets/151103543/3647150c-539b-46e4-a944-7b2402ab120a)
+
+- Pada Worker2
+  ![Screenshot_7](https://github.com/anamilia/mpi/assets/151103543/41a768e3-788b-4299-8313-0de96949b8fc)
+
+- Pada Worker3
+  ![Screenshot_8](https://github.com/anamilia/mpi/assets/151103543/22d939d1-5c88-4fd6-b1b0-ef9a90046239)
 
 ## 4.	Melakukan pengecekan IP dengan perintah berikut:
 
 $ Ifconfig
 | NAMA    | Master        | Worker        | Worker2       | Worker3       |
 |---------|---------------|---------------|---------------|---------------|
-| IP      | 172.20.10.13  | 172.20.10.12  | 172.20.10.10  | 172.20.10.14  |
+| IP      |  10.9.59.106  |  10.9.57.99   |  10.9.59.115  |  10.9.59.211  |
 
 # Membuat MPI Cluster
 ## 1.	Konfigurasi hosts file /etc/hosts
 - Pada Master
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/4acbd13b-9697-4e43-ad14-85901d8a4491)
+  ![Screenshot_9](https://github.com/anamilia/mpi/assets/151103543/042e1a17-bc23-4292-acca-2ecb45f74efa)
 
-- Pada Worker
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/dd4bfc66-d170-4d08-bb36-b6cb57363a88)
+- Pada Worker1
+  ![Screenshot_10](https://github.com/anamilia/mpi/assets/151103543/e41c19ab-24b7-4210-af6d-192421a96b08)
 
 - Pada Worker2
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/742e7d3c-8432-43d8-87d8-4e56ffff1e39)
+  ![Screenshot_11](https://github.com/anamilia/mpi/assets/151103543/8eac36d8-6ca2-4edb-ac24-5ccf84438c8b)
 
 - Pada Worker3 
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/062f847c-1332-4983-8502-2538ce273618)
-
+  ![Screenshot_12](https://github.com/anamilia/mpi/assets/151103543/47df0685-fd74-400d-93ad-166ebb232022)
+  
 ## 2. Membuat User Baru
 Buat user baru di SERVER dan CLIENT. Nama user harus samo semua di seluruh komputer.
 
@@ -51,20 +67,26 @@ $ su - <nama user>
 Server
 -	Master
   
- ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/c8a90f06-c3e1-4f1b-bbfa-4d966f84be5a)
+ ![Screenshot_13](https://github.com/anamilia/mpi/assets/151103543/c0e8d132-ad98-4b0a-8c93-29cb7c006732)
 
 Client
--	Worker
+-	Worker1
   
- ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/3e7be691-f656-49e7-859c-e2452cd3c1d2)
+ ![Screenshot_14](https://github.com/anamilia/mpi/assets/151103543/e1fd8b39-1a55-44b3-a208-80e99bcbc4cd)
+
+ ![Screenshot_15](https://github.com/anamilia/mpi/assets/151103543/60f56e1e-5da0-4b01-82bf-aa2c5eb49642)
 
 -	Worker2
   
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/6beb8b21-cb4a-463d-b65a-95afa9c04a8a)
+  ![Screenshot_16](https://github.com/anamilia/mpi/assets/151103543/c5e3c7bb-2297-448a-9d28-62cf3387307e)
+
+  ![Screenshot_17](https://github.com/anamilia/mpi/assets/151103543/10fa919e-e3a8-4972-acda-e2915fc7969e)
 
 -	Worker3
   
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/795f5014-1f43-445b-8009-3461bbda2e4b)
+  ![Screenshot_18](https://github.com/anamilia/mpi/assets/151103543/71fc0b18-8f26-49cd-a650-6b6a71447611)
+ 	
+  ![Screenshot_19](https://github.com/anamilia/mpi/assets/151103543/b685a18e-117d-4dcc-bb12-f554e17f276f) 
 
 ## 3. Konfigurasi SSH
 Setelah membuat dan masuk ke user, lakukan konfigurasi SSH.
@@ -74,33 +96,39 @@ Setelah membuat dan masuk ke user, lakukan konfigurasi SSH.
 $ sudo apt install openssh-server
 
 -	Pada master
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/43e3afd8-5830-405c-b037-e73d0abd2b8f)
+  ![Screenshot_20](https://github.com/anamilia/mpi/assets/151103543/8e155e88-d764-436c-a023-14e0b24c5c12)
 
 -	Pada worker
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/4fd78864-d105-4625-9b4f-cce6b0baaf42)
+  ![Screenshot_21](https://github.com/anamilia/mpi/assets/151103543/6375cec5-1ea7-48fc-9231-fb6facd3d784)
 
 -	Pada worker2
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/24cb05a5-c36a-44ce-9d0f-4c099d9b3ce7)
+  ![Screenshot_22](https://github.com/anamilia/mpi/assets/151103543/3a37e546-b4b7-4c06-b5da-9a03a63e7f42)
 
 -	Pada worker3
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/4e3d78fc-f15c-4825-a533-c90dba78eca3)
+  ![Screenshot_23](https://github.com/anamilia/mpi/assets/151103543/9cc0dad4-3916-413e-b3cd-3cbdefca0ee9)
 
 2. Melakukan pengecekan SSH
    
 $ ssh <nama user>@<host>
 
--	SSH dari Master ke Worker
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/8d769f2d-ec0c-4128-9d0a-85176126d7a8)
+-	SSH dari Master ke Worker1
+  ![Screenshot_24](https://github.com/anamilia/mpi/assets/151103543/90a0dde5-975b-4ffb-a661-a8f776b3adfa)
 
--	SSH dari Worker ke Master
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/7a73feeb-1e20-4189-b4f4-78cf874cf569)
+-	SSH dari Worker1 ke Master
+  ![Screenshot_25](https://github.com/anamilia/mpi/assets/151103543/bccd2b58-4cea-4823-b477-ad3d76305c6e)
+
+- SSH dari Worker2 ke Master
+  ![Screenshot_26](https://github.com/anamilia/mpi/assets/151103543/2ef1442b-dae5-4227-b9df-a8ac753dac8c)
+
+- SSH dari Worker3 ke Master
+  ![Screenshot_27](https://github.com/anamilia/mpi/assets/151103543/cddba141-df6a-415b-b6ce-b9027b89e58f)
 
 3. Generate Keygen
 Lakukan di SERVER
 
 $ ssh-keygen -t rsa
 
-![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/1ca483e6-57a9-4e7f-ba0b-b861b17b3bf5)
+  ![Screenshot_28](https://github.com/anamilia/mpi/assets/151103543/b0840a4c-1a54-4123-82cd-2d3848915e27)
 
 4. Copy key publik ke client
    
@@ -108,7 +136,7 @@ $ cd .ssh
 
 $ cat id_rsa.pub | ssh <nama user>@<host> "mkdir .ssh; cat >> .ssh/authorized_keys"
 
-![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/99d2da70-74f2-432f-844c-89f927e8d37d)
+![Screenshot_29](https://github.com/anamilia/mpi/assets/151103543/42c952ea-211b-4439-9569-e5c095d10b50)
 
 ## 5. Konfigurasi NFS
 
@@ -116,60 +144,44 @@ $ cat id_rsa.pub | ssh <nama user>@<host> "mkdir .ssh; cat >> .ssh/authorized_ke
 
 $ mkdir cloud
 
--	Pada Master
-  
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/cd3740ee-bda8-4741-8cae-b8c63b4bb040)
-
--	Pada Worker
-  
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/df5de58a-a766-43c5-9a29-6d5ad761e251)
-
--	Pada Worker2
-  
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/e1b4bcc9-0b4a-4ba7-aabc-b7ef5ec87233)
-
--	Pada Worker3
-  
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/9053c5d1-3383-46e7-b85c-d350b32bc3b9)
+  ![Screenshot_30](https://github.com/anamilia/mpi/assets/151103543/bebfc0ba-081a-4f70-8a60-b7c6670ab57f)
 
 2. Install NFS Server
 
 $ sudo apt install nfs-kernel-server
 
-![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/3e528d70-efd0-475e-879e-b3c7aae5a78b)
+![Screenshot_31](https://github.com/anamilia/mpi/assets/151103543/7cf6904f-ba4c-4e1c-81b3-76a63da20753)
 
 3. Konfigurasi file /etc/exports
 
 <lokasi shared folder> *(rw,sync,no_root_squash,no_subtree_check)
 
-![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/115e7835-f076-488a-9783-bef03f6a2fc5)
+![Screenshot_32](https://github.com/anamilia/mpi/assets/151103543/b237f0c5-1f16-4efc-a215-8ff1c4e58ffc)
 
 $ sudo exportfs -a
 
 $ sudo systemctl restart nfs-kernel-server
 
-![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/2086342f-a786-4b8f-8e9e-f1c4767dfc02)
+![Screenshot_33](https://github.com/anamilia/mpi/assets/151103543/0cb1ce90-ab48-4103-b965-1e4a3560e5ba)
 
 4. Install NFS Client
       
 $ sudo apt install nfs-common
 
--	Worker
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/b652d435-d875-4802-b0d9-a13a8211c739)
-
+-	Worker1
+  ![Screenshot_34](https://github.com/anamilia/mpi/assets/151103543/317903af-b161-4d56-ba4d-1f41c0760e9e)
 
 -	Worker2
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/1546a803-2af4-413a-b2d9-670966998cc6)
-
+  ![Screenshot_35](https://github.com/anamilia/mpi/assets/151103543/bff03e72-86b0-4a9d-8247-99395533879c)
 
 -	Worker3
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/9bf51dff-a62e-446a-a522-24a0c470299e)
+  ![Screenshot_36](https://github.com/anamilia/mpi/assets/151103543/269ebfb5-f991-47fb-a261-ab682f3ba311)
 
 5. Mounting
 
 $ sudo mount <server host>:<lokasi shared folder di server> <lokasi shared folder di client>
 
-![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/0caaa377-6248-4c7d-a4b2-f3f01adf6f52)
+![Screenshot_37](https://github.com/anamilia/mpi/assets/151103543/e33c9c82-c530-4254-b11b-39d953aa6ad6)
 
 ## 6. Instalasi MPI
 1.	Install MPI
@@ -177,19 +189,16 @@ $ sudo mount <server host>:<lokasi shared folder di server> <lokasi shared folde
 $ sudo apt install openmpi-bin libopenmpi-dev
 
 -	Pada Master
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/cc11bc72-d267-4054-900d-6a20fc24d364)
+  ![Screenshot_38](https://github.com/anamilia/mpi/assets/151103543/9597f488-05c7-411a-856c-ef8432da0a05)
 
-
--	Pada Worker
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/812086a1-1e87-474b-a85e-d00cd5ed5b23)
-
+-	Pada Worker1
+  ![Screenshot_39](https://github.com/anamilia/mpi/assets/151103543/6e6b9250-daa6-435f-add6-2f45f941c862)
 
 -	Pada Worker2
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/a9d5380f-439e-4810-b346-9e1c99ace759)
-
+  ![Screenshot_40](https://github.com/anamilia/mpi/assets/151103543/494a2e2b-8f5b-4176-ac38-0f62aa7736fa)
 
 -	Pada Worker3
-  ![image](https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/bfe8749b-4135-420f-be56-fd09964f638a)
+  ![Screenshot_41](https://github.com/anamilia/mpi/assets/151103543/8dfdbeb9-ddb9-40a6-8b18-7bd5e86458ed)
 
 # Menjalankan Program Bubblesort.py
 ## 1.	Membuat Program
@@ -197,24 +206,16 @@ $ sudo apt install openmpi-bin libopenmpi-dev
 $ touch bubblesort.py
 
 $ sudo nano bubblesort.py
-
-<img width="438" alt="image" src="https://github.com/kikyputraa/Rizki-Putra-Ramadhan_09011182126024_PP_SK5B/assets/150577938/45d8c461-5600-4030-945b-3fa5563b925e">
+  ![Screenshot_43](https://github.com/anamilia/mpi/assets/151103543/3db99160-52c1-418e-bd94-ffc98cac6071)
 
 ## 2.	Instalasi Python
 
 $ sudo apt install python3-pip
 
-<img width="311" alt="image" src="https://github.com/Kikyputraa/MPI-Numerik/assets/150577938/ccbd6c34-b70e-42e8-84b9-3e81d104e657">
-
+![Screenshot_42](https://github.com/anamilia/mpi/assets/151103543/8f97d832-0d0e-4512-b24e-2b9d094f5246)
 
 ## 3.	Eksekusi Numerik menggunakan Python
 
 $ python3 bubblesort.py
 
-<img width="394" alt="image" src="https://github.com/kikyputraa/Rizki-Putra-Ramadhan_09011182126024_PP_SK5B/assets/150577938/fc52ca0c-f9b2-46f7-9623-bf371b313e09">
-
-## 4. Eksekusi Bubblesort menggunakan MPI
-
-$ mpirun -np 3 -host master,worker,worker2,worker3 python3 bubblesort.py
-
-<img width="391" alt="image" src="https://github.com/kikyputraa/Rizki-Putra-Ramadhan_09011182126024_PP_SK5B/assets/150577938/46a22e2b-c3dd-4b59-8f00-996159145d52">
+  ![Screenshot_44](https://github.com/anamilia/mpi/assets/151103543/f584220a-af59-4831-93d4-b79eb11bee61)
